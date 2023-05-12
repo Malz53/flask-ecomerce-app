@@ -1,0 +1,85 @@
+{% extends 'base.html'%}
+
+{% block title %}
+  Home Page
+
+{% endblock%}
+{%block head%}
+
+{% endblock %}
+{% block content %}
+
+<br>
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <div class=animate>
+      <p>Imagine</p>
+      <p>Plan</p>
+      <p>Create</</p>
+        </div>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1 align="center" style="color:yellow; padding-top: 2rem">Welcome</h1>
+      <p align="center">We are a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat committed to providing cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+      <h1 align="center" style="color:yellow"> We Offer the following Phone Models.</h1>
+       <div class="row">
+  <div class="col-md-4">
+        <img src="{{url_for('static', filename='samsung.png')}}" alt="Fjords" style="width:60%"/>
+        <div class="caption">
+          <p>Samsung</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+        <img src="{{url_for('static', filename='iphone.png')}}" alt="Fjords" style="width:60%"/>
+        <div class="caption">
+          <div>Iphone</div>
+    </div>
+  </div>
+  <div class="col-md-4">
+        <img src="{{url_for('static', filename='huwei.png')}}" alt="Fjords" style="width:60%"/>
+        <div class="caption">
+          <p>Huwei</p>
+    </div>
+  </div>
+</div>
+      <hr>
+      <h1 align="center" style="color:yellow">Comments</h1>
+      <p><div class="mb-3" align="center">
+  <label for="exampleFormControlInput1" class="form-label">Enter Email Address to comment</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3" align="center">
+  <label for="exampleFormControlTextarea1" class="form-label">Enter Comment Here</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div></p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p><figure class="text-end">
+  <blockquote class="blockquote">
+    <p>Proffesionalism at its finest</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    From a  <cite title="Source Title">Satisfied Customer</cite>
+  </figcaption>
+</figure></p>
+      </div>
+      <div class="well">
+        <p><figure class="text-end">
+  <blockquote class="blockquote">
+    <p>A cut above the rest</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Frome an even more <cite title="Source Title">Satisfied Customer</cite>
+  </figcaption>
+</figure></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>|Elctronics Inc| &#169 Mbakisi Malunga</p>
+</footer>
+{% endblock %}

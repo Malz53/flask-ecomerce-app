@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% block title %}
+  Registration
+{% endblock%}
+
+{% block content %}
+<body class="text-center">
+this is only fo da Registrations
+<div class="container">
+  <h1 class="h3 mb-3 font-weight-normal">|Electro Incoperated|</h1>
+  <h2 class="h3 mb-3 font-weight-normal">CRUD</h2>
+  <br>
+  <form method="POST" class="form-registraion" style="color:white">
+    {{form.hidden_tag() }}
+    {{ form.name.label() }}
+    {{ form.name(class='form-control') }}
+    {{ form.price.label() }}
+    {{ form.price(class='form-control') }}
+    {{ form.barcode.label() }}
+    {{ form.barcode(class='form-control') }}
+    {{ form.description.label() }}
+    {{ form.description(class='form-control') }}
+    <br>
+    {{form.submit(class= "btn btn.lg btn-block btn-primary")}}
+  </form>
+</div>
+</body>
+{% endblock %}
